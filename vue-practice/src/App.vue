@@ -1,7 +1,10 @@
 <script setup lang="ts">
 
 import Chapter from './components/Chapter.vue';
+import Model from './components/Model.vue';
 // import RefVsReactive from './components/RefVsReactive.vue';
+
+
 
 
 </script>
@@ -11,7 +14,8 @@ import Chapter from './components/Chapter.vue';
   <Chapter />
   <hr>
   <!-- <RefVsReactive /> -->
-  
+
+  <Model />
 
 </template>
 
