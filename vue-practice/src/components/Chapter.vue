@@ -1,11 +1,28 @@
+
+
+
 <script setup lang="ts">
+
+import { inject, provide, ref } from 'vue';
+import ChildComp from './ChildComp.vue';
+import { scoreKey, type ScoreContext } from '../store/score';
+
+
+
+const ctx = inject(scoreKey);
+
+
+const { score, comment } = ctx as ScoreContext;
+
 
 </script>
 
 <template>
-  <div>
+  
+  <ChildComp />
+  <p>score : {{ score }}</p>
+  <p>comment : {{ comment }}</p>
 
-  </div>
 </template>
 
 <style scoped>
